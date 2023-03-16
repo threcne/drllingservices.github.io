@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, inital-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="Images/logo2.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="main.html"><img src="Images/logo2.png"></a>
+            <span class="logo-name">RDS Drilling Services</span>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="c1"><a href="index.html">HOME</a></li> 
+                    <li class="c2"><a href="about.html.html">ABOUT</a></li>
+                    <li class="c3"><a href="projects.html.html">PROJECTS</a></li>
+                    <li class="c4"><a href="contact.html.html">CONTACT</a></li>           
+                    
+
+                </ul>
+
+            </div>
+            
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-----Contact Us---->
+<section class="s6">
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.597694743775!2d121.03702331380742!3d14.450333384617949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cffea01b1471%3A0x2757b2d493278ae4!2sGoodwill%202%20Subdivision%20Brgy%20BF%20Homes%20Sucat%20Paranaque%20City!5e0!3m2!1sen!2sph!4v1677420359373!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+</section>
+
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <a href="#" title="Paranaque, Philippines" class="fa fa-home"></a>
+        <span>
+          <h5>Goodwill 2 Subdivision, Barangay B.F homes</h5>
+          <p>Paranaque City</p>
+        </span>
+
+
+      </div>
+
+      <div>
+        <a href="#" title="+639695303630" class="fa fa-phone"></a>
+        <span>
+          <h5>+63-9695303630</h5>
+          <p>Monday to Sunday | 8AM to 7PM</p>
+        </span>
+
+
+      </div>
+
+      <div>
+        <a href="#" title="rdsdrillingservices@gmail.com" class="fa fa-envelope-o"></a>
+        <span>
+          <h5>rdsdrillingservices@gmail.com</h5>
+          <p>Email us your query</p>
+        </span>
+
+
+      </div>
+
+      <div>
+        <a href="#" title="" class="fa fa-yahoo"></a>
+        <span>
+          <h5>rdsdrillingservices@yahoo.com</h5>
+          <p>Email us your query </p>
+        </span>
+
+
+      </div>
+
+
+    </div>
+  
+<!-----form page-->
+    <div class="contact-col">
+      <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name " required>
+        <input type="email" name="email" placeholder="Enter your email address " required>
+        <input type="text" name="subject" placeholder="Enter your subject " required>
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red">Send Message</button>
+
+
+
+
+      </form>
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+</section>
+
+
+
+
+<!--footer-->
+<section class="footer">
+  <h4>Inquire Now</h4>
+  <p>There are various platforms available for you to connect with us, and we can be reached through any of them.</p>
+  <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=100090570111400" target="_blank" title="Drilling Services" class="fa fa-facebook"></a>
+      <a href="#" title="+639695303630" class="fa fa-mobile-phone"></a>
+      <a href="#" title="rdsdrillingservices@gmail.com" class="fa fa-google"></a>
+      <a href="#" title="rds_821@yahoo.com" class="fa fa-yahoo"></a>
+    
+  </div>
+  <p>Made by <a href="#" class="fa fa-star-o" title="Web Developer">&nbsp;Robin Delos Santos</a></p>
+
+
+</section>
+
+
+
+<!--------JavaScript for Toggle Menu------->
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+<!----javascript for-AUTOMATIC SLIDESHOW--->
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>
